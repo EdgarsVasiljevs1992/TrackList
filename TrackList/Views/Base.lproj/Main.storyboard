@@ -149,13 +149,13 @@
                                                         <constraint firstAttribute="height" constant="200" id="e5G-0M-xQF"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0X-FE-MYg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0X-FE-MYg">
                                                     <rect key="frame" x="148" y="0.0" width="165" height="200"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="GYx-i8-zzP"/>
+                                                        <constraint firstAttribute="width" constant="165" id="GYx-i8-zzP"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="tqf-di-ewx"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -168,8 +168,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="movieImageView" destination="qbZ-cH-bx8" id="uXL-r0-QDE"/>
-                                    <outlet property="movieLabel" destination="O0X-FE-MYg" id="ZGy-Df-8Bo"/>
+                                    <outlet property="movieImageView" destination="qbZ-cH-bx8" id="gRf-Ob-fm3"/>
+                                    <outlet property="movieLabel" destination="O0X-FE-MYg" id="Qzj-R5-idf"/>
                                     <segue destination="jN1-gV-2gJ" kind="show" id="2yO-00-fVB"/>
                                 </connections>
                             </tableViewCell>

@@ -58,7 +58,7 @@ class DataManager {
         ]
     
     var movie = [
-            "Guardians of the galaxy I",
+            "Guardians of the galaxy",
             "Episode I: The Phantom Menace",
             "Episode II: Attack of the Clones",
             "Star Wars: The Clone Wars",
@@ -66,11 +66,12 @@ class DataManager {
             "Solo: A Star Wars Story",
             "Rogue One",
             "Episode IV: A New Hope",
+            "Guardians of the galaxy Vol.2",
         
         ]
     
     var year = [
-            "2018",
+            "2014",
             "1999",
             "2002",
             "2008",
@@ -78,6 +79,7 @@ class DataManager {
             "2018",
             "2016",
             "1977",
+            "2017",
            
         ]
     
@@ -90,6 +92,7 @@ class DataManager {
             "Solo A Star Wars Story (2018)",
             "Rogue One (2016)",
             "Episode IV A New Hope (1977)",
+            "Guardians of the galaxy 2",
            
         ]
 }

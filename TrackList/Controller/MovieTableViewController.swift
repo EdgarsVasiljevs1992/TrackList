@@ -37,11 +37,12 @@ class MovieTableViewController: UITableViewController {
 
         // Configure the cell...
         let film = movies[indexPath.row]
-        cell.textLabel?.text = film.movie
-        cell.detailTextLabel?.text = film.year
-        cell.imageView?.image = UIImage(named: film.poster)
+//        cell.textLabel?.text = film.movie
+//        cell.detailTextLabel?.text = film.year
+//        cell.imageView?.image = UIImage(named: film.poster)
         
-        //cell.movieImageView.image = UIImage(named: "Galaxy Guardians.jpeg")
+        cell.movieImageView.image = UIImage(named: film.poster)
+        cell.movieLabel.text = film.movie
         
         return cell
     }

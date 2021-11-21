@@ -98,8 +98,8 @@ class MovieTableViewController: UITableViewController {
              let detailVC = segue.destination as! DetailViewController
              // Pass the selected object to the new view controller.
              detailVC.film = movies[indexPath.row]
-    }
-
-}
+         }
+     }
+    
 }
 

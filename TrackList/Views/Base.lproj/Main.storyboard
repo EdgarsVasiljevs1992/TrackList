@@ -193,40 +193,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="2yA-CV-kgJ">
-                                <rect key="frame" x="67.5" y="110" width="240" height="447"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yFs-u2-umC">
+                                <rect key="frame" x="43" y="44" width="288" height="240"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Galaxy Guardians" translatesAutoresizingMaskIntoConstraints="NO" id="rqc-OP-FTJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="352"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="240"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="UER-Cy-3hQ"/>
-                                            <constraint firstAttribute="height" constant="352" id="ewA-O3-JUa"/>
+                                            <constraint firstAttribute="width" constant="140" id="JdX-oY-yHF"/>
+                                            <constraint firstAttribute="height" constant="240" id="RiW-de-yyD"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHq-Ma-Prk">
-                                        <rect key="frame" x="0.0" y="391" width="240" height="56"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="9cO-Vn-tvH"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="HNL-LU-HZz"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YJr-Xt-sXy">
+                                        <rect key="frame" x="148" y="0.0" width="140" height="182"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHq-Ma-Prk">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="aZE-ur-c1V"/>
+                                                    <constraint firstAttribute="width" constant="140" id="yt6-Wb-brx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wP-TL-9Db">
+                                                <rect key="frame" x="0.0" y="66" width="140" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="hh5-pF-7Ay"/>
+                                                    <constraint firstAttribute="height" constant="56" id="zdn-BR-Jp5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY1-Ts-Tb2">
+                                                <rect key="frame" x="0.0" y="132" width="140" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="8T0-9W-bF9"/>
+                                                    <constraint firstAttribute="height" constant="50" id="cmf-NP-xYx"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Watch Trailer"/>
+                                                <connections>
+                                                    <action selector="playButtonTapped:" destination="jN1-gV-2gJ" eventType="touchUpInside" id="VjT-Yk-cFU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faJ-vB-Cn1">
+                                <rect key="frame" x="43" y="341" width="288" height="190"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="eJ5-EY-FK8"/>
+                                    <constraint firstAttribute="height" constant="190" id="hey-4U-c46"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="shR-Mn-BOm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2yA-CV-kgJ" firstAttribute="centerX" secondItem="v2V-Xl-q4j" secondAttribute="centerX" id="Sk5-XF-0dg"/>
-                            <constraint firstItem="2yA-CV-kgJ" firstAttribute="centerY" secondItem="v2V-Xl-q4j" secondAttribute="centerY" id="wds-Ky-3ni"/>
+                            <constraint firstItem="faJ-vB-Cn1" firstAttribute="top" secondItem="yFs-u2-umC" secondAttribute="bottom" constant="57" id="GLH-Fd-7Ed"/>
+                            <constraint firstItem="shR-Mn-BOm" firstAttribute="trailing" secondItem="faJ-vB-Cn1" secondAttribute="trailing" constant="44" id="JcO-Qd-Vf3"/>
+                            <constraint firstItem="shR-Mn-BOm" firstAttribute="trailing" secondItem="yFs-u2-umC" secondAttribute="trailing" constant="44" id="U14-nX-dhF"/>
+                            <constraint firstItem="faJ-vB-Cn1" firstAttribute="leading" secondItem="shR-Mn-BOm" secondAttribute="leading" constant="43" id="h2x-rx-sZH"/>
+                            <constraint firstItem="yFs-u2-umC" firstAttribute="top" secondItem="shR-Mn-BOm" secondAttribute="top" id="hqg-zb-8fA"/>
+                            <constraint firstItem="yFs-u2-umC" firstAttribute="leading" secondItem="shR-Mn-BOm" secondAttribute="leading" constant="43" id="iWG-Tu-o43"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mc7-st-iaJ"/>
                     <connections>
+                        <outlet property="genreLabel" destination="5wP-TL-9Db" id="sUn-DP-pWv"/>
                         <outlet property="movieImageView" destination="rqc-OP-FTJ" id="sNp-bo-YrV"/>
                         <outlet property="movieLabel" destination="lHq-Ma-Prk" id="9ba-6r-PHA"/>
+                        <outlet property="movieWebView" destination="faJ-vB-Cn1" id="PXP-ui-8Gf"/>
+                        <outlet property="watchTrailerButton" destination="sY1-Ts-Tb2" id="fiA-Jf-uZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyQ-F5-fYx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
